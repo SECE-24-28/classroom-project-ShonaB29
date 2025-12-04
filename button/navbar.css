@@ -1,0 +1,29 @@
+{
+  margin: 0;
+  padding: 0;
+} 
+nav {
+  background-color: rgb(19, 179, 211);
+}
+ul {
+  list-style-type: none;
+  text-align: right;
+  padding: 20px;
+}
+li {
+  display: inline;
+  padding: 4px;
+}
+a {
+                     text-decoration: none;
+  color: rgb(78, 3, 3);
+}
+a:hover {
+  color: rgb(94, 153, 23);
+}
+a:active {
+  color: rgb(255, 0, 0);
+}
+body {
+  font-family: Arial, sans-serif;
+}
