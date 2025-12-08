@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BSNL Plans</title>
+    <style>
+        body { font-family: Arial; background:#f5f5f5; }
+        h2 { text-align:center; color:#009688; }
+        .plan-box {
+            width:300px; margin:20px auto; padding:20px;
+            background:white; border-radius:12px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+        .price { font-size:32px; color:#009688; font-weight:bold; }
+        .btn {
+            background:#009688; color:white; padding:10px 20px;
+            border:none; border-radius:8px; cursor:pointer;
+        }
+    </style>
+
+    <script>
+        function openNumberPage(amount) {
+            window.location.href = `enter-number.html?amount=${amount}&operator=BSNL`;
+        }
+    </script>
+</head>
+<body>
+
+<h2>Popular BSNL Plans</h2>
+
+<div class="plan-box">
+    <div class="price">₹153</div>
+    <p>1GB/day • 28 Days</p>
+    <button class="btn" onclick="openNumberPage(153)">Recharge</button>
+</div>
+
+<div class="plan-box">
+    <div class="price">₹197</div>
+    <p>2GB/day • 18 Days</p>
+    <button class="btn" onclick="openNumberPage(197)">Recharge</button>
+</div>
+
+<div class="plan-box">
+    <div class="price">₹485</div>
+    <p>1.5GB/day • 90 Days</p>
+    <button class="btn" onclick="openNumberPage(485)">Recharge</button>
+</div>
+
+<div class="plan-box">
+    <div class="price">₹599</div>
+    <p>2GB/day • 84 Days</p>
+    <button class="btn" onclick="openNumberPage(599)">Recharge</button>
+</div>
+
+<div class="plan-box">
+    <div class="price">₹997</div>
+    <p>2GB/day • 180 Days</p>
+    <button class="btn" onclick="openNumberPage(997)">Recharge</button>
+</div>
+
+</body>
+</html>
