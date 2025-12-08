@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login & Home Page</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+            padding: 20px;
+        }
+
+        /* Login Box */
+        #login-box {
+            width: 300px;
+            margin: 80px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px #aaa;
+            border-radius: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #0077cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        button:hover {
+            background: #005fa3;
+        }
+
+        /* Home Page */
+        #home-page {
+            display: none;
+        }
+
+        .navbar {
+            background: #007acc;
+            padding: 10px;
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+    </style>
+
+    <script>
+        function login() {
+            document.getElementById("login-box").style.display = "none";
+            document.getElementById("home-page").style.display = "block";
+        }
+
+        function register() {
+            alert("Register button clicked! You can add your registration page here.");
+        }
+    </script>
+</head>
+<body>
+
+<!-- LOGIN PAGE -->
+<div id="login-box">
+    <h2>Login</h2>
+    <input type="text" placeholder="Username" required>
+    <input type="password" placeholder="Password" required>
+
+    <button onclick="login()">Login</button>
+    <button onclick="register()" style="background: #28a745;">Register</button>
+</div>
+
+<!-- HOME PAGE -->
+<div id="home-page">
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Profile</a>
+        <a href="#" onclick="location.reload()">Logout</a>
+    </div>
+
+    <h1>Welcome to the Home Page!</h1>
+    <p>You have successfully logged in.</p>
+</div>
+
+</body>
+</html>
