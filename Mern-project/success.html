@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recharge Success</title>
+    <style>
+        body {
+            background: #d6f5d6;
+            font-family: Arial;
+        }
+        .box {
+            width: 450px;
+            background: white;
+            padding: 30px;
+            margin: 50px auto;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+        }
+        .title {
+            font-size: 30px;
+            color: green;
+            font-weight: bold;
+            text-align: center;
+        }
+        .details-box {
+            background: #f1f1f1;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .home-btn {
+            margin-top: 20px;
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            background: #0052ff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        function loadDetails() {
+            const params = new URLSearchParams(window.location.search);
+
+            let mobile = params.get("mobile");
+            let amount = params.get("amount");
+            let operator = params.get("operator");
+            let txn = "TXN" + Math.floor(Math.random() * 9000000000);
+
+            document.getElementById("mobile").innerHTML = mobile;
+            document.getElementById("amount").innerHTML = amount;
+            document.getElementById("operator").innerHTML = operator;
+
+            document.getElementById("txn").innerHTML = txn;
+            document.getElementById("date").innerHTML = new Date().toLocaleString();
+        }
+    </script>
+
+</head>
+<body onload="loadDetails()">
+
+<div class="box">
+    <div class="title">Recharge Successful! ✔</div>
+    <p style="text-align:center;">Your recharge has been processed.</p>
+
+    <div class="details-box">
+        <h3>Recharge Details</h3>
+
+        <p><b>Mobile Number:</b> <span id="mobile"></span></p>
+        <p><b>Operator:</b> <span id="operator"></span></p>
+        <p><b>Amount:</b> ₹<span id="amount"></span></p>
+        <p><b>Date & Time:</b> <span id="date"></span></p>
+        <p><b>Transaction ID:</b> <span id="txn"></span></p>
+    </div>
+
+   <button class="home-btn" onclick="window.location.href='home.html'">Go to Home</button>
+
+</div>
+
+</body>
+</html>

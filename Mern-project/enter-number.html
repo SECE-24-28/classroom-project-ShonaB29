@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enter Mobile Number</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef7ff;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            background: white;
+            padding: 30px;
+            width: 350px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+            border-radius: 8px;
+            border: 1px solid #bbb;
+            margin-top: 10px;
+        }
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 12px;
+            background: #0066ff;
+            color: white;
+            border: none;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        function proceedRecharge() {
+            const params = new URLSearchParams(window.location.search);
+            let amount = params.get("amount");
+            let operator = params.get("operator");
+
+            let mobile = document.getElementById("mobile").value;
+
+            if (mobile.length !== 10) {
+                alert("Please enter a valid 10-digit number");
+                return;
+            }
+
+            window.location.href =
+                `success.html?mobile=${mobile}&amount=${amount}&operator=${operator}`;
+        }
+    </script>
+
+</head>
+<body>
+
+<div class="box">
+    <h2>Enter Mobile Number</h2>
+    <input type="number" id="mobile" placeholder="Enter 10-digit mobile number">
+    <button onclick="proceedRecharge()">Continue</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Pay</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", Arial, sans-serif;
+    }
+
+    body {
+        background: #eef3f8;
+        overflow-x: hidden;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        background: linear-gradient(90deg, #003c8f, #1565c0);
+        color: white;
+        padding: 15px 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        margin-left: 30px;
+        font-size: 17px;
+        transition: 0.3s;
+    }
+
+    .menu a:hover {
+        color: #ffeb3b;
+        transform: translateY(-2px);
+    }
+
+    /* HERO SECTION NEW STYLE */
+.hero {
+    background: linear-gradient(180deg, #0077b6, #0096c7);
+    color: white;
+    padding: 80px 25px;  /* Reduced height */
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px; /* Reduced */
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero p {
+    font-size: 18px; /* Reduced */
+    max-width: 750px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn {
+    background: #ffca28;
+    padding: 12px 28px;
+    text-decoration: none;
+    color: #222;
+    font-size: 17px;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+    /* RECHARGE OPTIONS */
+    .recharge-section {
+        text-align: center;
+        padding: 60px 25px;
+    }
+
+    .recharge-section h2 {
+        font-size: 34px;
+        margin-bottom: 25px;
+        color: #003c8f;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+
+    .options {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    .option-box {
+        background: white;
+        width: 220px;
+        padding: 28px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+        transition: 0.3s;
+        font-size: 22px;
+        font-weight: bold;
+        cursor: pointer;
+        border: 2px solid transparent;
+    }
+
+    .option-box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+        border-color: #1565c0;
+    }
+
+    footer {
+        background: linear-gradient(90deg, #003c8f, #0d47a1);
+        color: white;
+        text-align: center;
+        padding: 18px;
+        margin-top: 50px;
+        font-size: 15px;
+        letter-spacing: 0.3px;
+    }
+</style>
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo"> Smart Pay </div>
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#">Login</a>
+            <a href="#">Signup</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION WITH YOUR IMAGE -->
+   <section class="hero">
+    <h1>Fast, Secure & Easy Mobile Recharge</h1>
+    <p>Welcome to Smart Pay — the fastest platform for online mobile recharges.</p>
+</section>
+
+
+    <!-- RECHARGE OPTIONS -->
+    <section class="recharge-section">
+        <h2>Select Your Mobile Recharge</h2>
+    <div class="options">
+        <a href="airtel.html"><div class="option-box">Airtel</div></a>
+        <a href="jio.html"><div class="option-box">Jio</div></a>
+        <a href="bsnl.html"><div class="option-box">BSNL</div></a>
+        <a href="#"><div class="option-box">VI</div></a>
+    </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Smart Pay | All Rights Reserved
+    </footer>
+
+</body>
+</html>

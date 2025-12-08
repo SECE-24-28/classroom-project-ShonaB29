@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VI Plans</title>
+    <style>
+        body { font-family: Arial; background:#f5f5f5; }
+        h2 { text-align:center; color:#ff0066; }
+        .plan-box {
+            width:300px; margin:20px auto; padding:20px;
+            background:white; border-radius:12px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+        .price { font-size:32px; color:#ff0066; font-weight:bold; }
+        .btn {
+            background:#ff0066; color:white; padding:10px 20px;
+            border:none; border-radius:8px; cursor:pointer;
+        }
+    </style>
+
+    <script>
+        function openNumberPage(amount) {
+            window.location.href = `enter-number.html?amount=${amount}&operator=VI`;
+        }
+    </script>
+</head>
+<body>
+
+<h2>Popular VI Plans</h2>
+
+<div class="plan-box">
+    <div class="price">₹199</div>
+    <p>1GB/day • 18 Days</p>
+    <button class="btn" onclick="openNumberPage(199)">Recharge</button>
+</div>
+
+<div class="plan-box">
+    <div class="price">₹299</div>
+    <p>1.5GB/day • 28 Days</p>
+    <button class="btn" onclick="openNumberPage(299)">Recharge</button>
+</div>
+
+<div class="plan-box">
+    <div class="price">₹479</div>
+    <p>1.5GB/day • 56 Days</p>
+    <button class="btn" onclick="openNumberPage(479)">Recharge</button>
+</div>
+
+<div class="plan-box">
+    <div class="price">₹699</div>
+    <p>2GB/day • 56 Days</p>
+    <button class="btn" onclick="openNumberPage(699)">Recharge</button>
+</div>
+
+<div class="plan-box">
+    <div class="price">₹1099</div>
+    <p>2GB/day • 84 Days</p>
+    <button class="btn" onclick="openNumberPage(1099)">Recharge</button>
+</div>
+
+</body>
+</html>
