@@ -1,0 +1,138 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background: #eef4ff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  background: #0047b3;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+/* Center Box for Login/Signup */
+.center-box {
+  max-width: 380px;
+  margin: 70px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.center-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #c8d4ff;
+}
+
+/* Container */
+.container {
+  max-width: 550px;
+  margin: 40px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Inputs */
+input, select {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #c9d7ff;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 14px;
+  background: #0047b3;
+  border: none;
+  color: white;
+  font-size: 17px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Plan Card */
+.plan-card {
+  border: 2px solid #d7e1ff;
+  padding: 16px;
+  border-radius: 12px;
+  margin: 12px 0;
+  cursor: pointer;
+  background: white;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.plan-card:hover {
+  border-color: #0047b3;
+}
+
+/* Footer */
+.footer {
+  margin-top: auto;
+  background: #002d70;
+  color: white;
+  text-align: center;
+  padding: 14px;
+}
+/* Make footer stick bottom ALWAYS */
+body {
+  background: #eef4ff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;         /* pushes footer to bottom */
+  max-width: 550px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Selected Plan Highlight */
+.selected-plan {
+  border-color: #0047b3 !important;
+  background: #eaf1ff;
+}
+
+/* Recharge button spacing */
+.recharge-btn {
+  margin-top: 20px;
+}
